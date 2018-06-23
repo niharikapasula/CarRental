@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=number],input[type=rentPerDay] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=number]:focus , input[type=rentPerDay]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+</style>
+<body>
+
+<form action="AddCarByAdmin" method = "POST">
+  <div class="container">
+    <h1>Add Car</h1>
+    
+    <hr>
+
+    <label for="carModel"><b>Car Model</b></label>
+    <input type="text" placeholder="Enter car model" name="carModel" required>
+<label for="seats"><b>Number Of Seats</b></label>
+    <input type="number" placeholder="Enter no of seats" name="seats" required>
+<label for="rentPerDay"><b>Rent Per Day</b></label>
+    <input type="rentPerDay" placeholder="Enter Rent Per Day" name="rentPerDay" required>
+    <label for="driverName"><b>Driver Name</b></label>
+    <input type="text" placeholder="Enter driverName" name="driverName" required>
+<label for="driverMobileNo"><b>Driver Mobile Number</b></label>
+    <input type="number" placeholder="Enter driver Mobile No" name="driverMobileNo" required>
+    
+
+    <label for="giverId"><b>Giver Id</b></label>
+    <input type="number" placeholder="Enter giverId" name="giverId" required>
+
+    <input type="submit" name="s" value="AddCar"/>
+    
+    
+    
+  </div>
+</form>
+
+</body>
+</html>

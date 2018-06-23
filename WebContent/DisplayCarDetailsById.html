@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Insert title here</title><style>
+<style>
+body{
+background-color:#00FFFF;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+	<form action="DisplayCarByIdServlet"  method="POST">
+<center>
+<i class="fa fa-user" style="font-size:200px"></i><br>
+<input type = text name = "carId" placeholder = "carId"/><br>
+<input type = submit name = "s"  value = "GetDetails"/>
+
+</center>
+</body>
+</html>
